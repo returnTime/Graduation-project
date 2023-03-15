@@ -1,0 +1,298 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 黑体;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+}
+ui li{
+    list-style: none;
+}
+.home-page{
+    height: calc(100vh - 1px);
+    background-image: url(../img/nature-3194001_1280.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid white;
+    background-position: center;
+    overflow: auto;
+}
+
+.nav-boder{
+    min-height: 98px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    display: flex;
+    justify-content: center;
+}
+.nav-content-box{
+    width: 1198px;
+    height: 97px;
+    border: 1px solid white;
+    border-bottom: none;
+    border-top: none;
+    font-size: 15px;
+    color: white;
+}
+.content-box-top{
+    height: 58px;
+    border-bottom: 1px solid white;
+}
+.nav-content-bottom{
+    width: 100%;
+    height: 39px;
+    display: flex;
+}
+.nav-a{
+    border-right: 1px solid white;
+    flex-grow: 1;
+    text-align: center;
+    line-height: 39px;
+}
+.nav-a-right{
+    border-right: none;
+}
+.nav-a a{
+    display: block;
+    text-decoration: none;
+}
+.nav-a a:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+    color: rgb(206, 206, 206);
+    transition: all 0.5s;
+}
+.logo{
+    padding-right: 20px;
+    align-self: center;
+}
+.log-in{
+    margin-left: 30px;
+    line-height: 60px;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+.ava-pos{
+    padding-left: 20px;
+    align-self: center;
+}
+.my-ava{
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    border: 2px solid white;
+    overflow: hidden;
+}
+.m-logo{
+    align-self: center;
+    display: none;
+    
+}
+.m-logo img{
+    width: 100px;
+    height: auto;
+    padding-right: 10px;
+}
+.unfold{
+    border: none;
+    outline: none;
+    display: none;
+    background: none;
+    font-size: 50px;
+    align-self: center;
+    padding-left: 10px;
+    
+}
+.unfold-content{
+    transition:height 1.5s;
+    
+    height: 0;
+    overflow: hidden;
+}
+.unfold-content li{
+    border-bottom: 1px solid white;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+    font-size: 15px;
+    
+}
+.sentence{
+    position: relative;
+    top: 20%;
+    min-height: 220px;
+}
+.word{
+    font-size: 50px;
+    color: white;
+    text-indent: 2em;
+    
+}
+.author{
+    font-size: 40px;
+    color: white;
+    text-align: right;
+}
+
+.date-wrap{
+    display: flex;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: space-between;
+}
+.time{
+    font-size: 100px;
+    color: white;
+    line-height: 1;
+}
+.seconds{
+    color: white;
+    font-size: 40px;
+}
+.date{
+    font-size: 50px;
+    color: white;
+}
+.weather{
+    display: flex;
+    align-items: flex-end;
+}
+.weather-wrap{
+    width: 112px;
+    height: 112px;
+    font-size: 35px;
+    color: white;
+    border: 6px solid white;
+    border-radius: 50%;
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.date-time p{
+    margin-bottom: 0;
+    min-height: 10px;
+}
+.imgsize{
+    height: 300px;
+    width: auto;
+}
+/* .date-time{
+    
+} */
+@media screen and (max-width:1440px) {
+    .ava-pos{
+        padding-left: 5px;
+    }
+    .logo{
+        padding-right: 5px;
+        
+    }
+    .logo img{
+        width: 100px;
+        height: auto;
+    }
+}
+@media screen and (max-width:1000px){
+    .logo{
+        display: none;
+    }
+    .ava-pos{
+        display: none;
+    }
+    .word{
+        font-size: 40px;
+    }
+    .author{
+        font-size: 30px;
+    }
+    .time{
+        font-size: 70px;
+        
+    }
+    .seconds{
+        
+        font-size: 20px;
+    }
+    .date{
+        font-size: 35px;
+    }
+    .weather-wrap{
+        width: 90px;
+        height: 90px;
+        font-size: 30px;
+        border: 5px solid white;
+    }
+}
+@media screen and (max-width:900px) {
+    .nav-content-box{
+        display: none;
+    }
+    .m-logo{
+        display: inline-block;
+    }
+    .nav-boder{
+        min-height: 60px;
+        justify-content: space-between;
+    }
+    .unfold{
+        display: block;
+    }
+    .unfold-content{
+        display: block;
+    }
+    .word{
+        font-size: 30px;
+    }
+    .author{
+        font-size: 20px;
+    }
+    .sentence{
+        position: relative;
+        top: 10%;
+    }
+    .time{
+        font-size: 40px;
+        
+    }
+    .seconds{
+        
+        font-size: 10px;
+    }
+    .date{
+        font-size: 20px;
+    }
+    .weather-wrap{
+        width: 60px;
+        height: 60px;
+        font-size: 15px;
+        border: 3px solid white;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .unfold-content{
+        display: none;
+    }
+}
+@media screen and (max-width:310px) {
+    .weather{
+        display: none;
+    }
+    .imgsize{
+        height: 90px;
+    }
+}
+@media screen and (max-width:500px) {
+    .imgsize{
+        height: 150px;
+    }
+}

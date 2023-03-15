@@ -1,0 +1,49 @@
+import Vue from 'vue'
+import { 
+     Button,
+     Avatar,
+     Input,
+     Image,
+     loading,
+     Collapse,
+     CollapseItem,
+     Upload,
+     Dialog,
+     Form,
+     FormItem,
+     Radio,
+     RadioGroup,
+     Message,
+     Progress,
+     PageHeader,
+     Tabs,
+     TabPane,
+     Popconfirm,
+     Switch,
+     Popover,
+     Empty,
+     Result
+} from 'element-ui'
+Vue.use(Input)
+Vue.use(Avatar)
+Vue.use(Button)
+Vue.use(Image)
+Vue.use(loading)
+Vue.use(Collapse)
+Vue.use(CollapseItem)
+Vue.use(Upload)
+Vue.use(Dialog)
+Vue.use(Form)
+Vue.use(FormItem)
+Vue.use(Radio)
+Vue.use(RadioGroup)
+Vue.use(Progress)
+Vue.use(PageHeader)
+Vue.use(Tabs)
+Vue.use(TabPane)
+Vue.use(Popconfirm)
+Vue.use(Switch)
+Vue.use(Popover)
+Vue.use(Empty)
+Vue.use(Result)
+Vue.prototype.$message = Message
